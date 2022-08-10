@@ -2,11 +2,11 @@
 
 I was inspired by one of Internet Historian video, [The Engoodening of No Man's Sky](https://www.youtube.com/watch?v=O5BJVO3PDeQ&t=1s), particularly this following segment:
 
-"Then he starts breaking that (all the feedback of the game from various sources) down into datasets: people who haven't bought the game, people who have bought it and played it for a hundred hours, people who have returned it, etc. 
+"_Then he starts breaking that (all the feedback of the game from various sources) down into datasets: people who haven't bought the game, people who have bought it and played it for a hundred hours, people who have returned it, etc._
 
-Then he starts compiling those complaints into usable data, focusing on the people with the most sincere experience of the game. 
+_Then he starts compiling those complaints into usable data, focusing on the people with the most sincere experience of the game._
 
-Then he starts making a big list of all the things that need adding and prioritize them."
+_Then he starts making a big list of all the things that need adding and prioritize them._"
 
 This workflow was really interesting to me, because it is applicable in many cases, especially in the industry. So here it is, my first attempt on exploring the field of NLP. Enjoy!
 
