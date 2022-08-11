@@ -14,7 +14,7 @@ This workflow was really interesting to me, because it is applicable in many cas
 This repo contains this README, a python notebook called Airline Customer Segmentation.ipynb, a slides in pdf format to highlight the most important aspects of this project called 'Airline Customer Segmentation - slides.pdf', and the dataset flight.csv is in the data directory.
 
 # Data
-I use the [Steam Reviews Dataset](https://www.kaggle.com/datasets/luthfim/steam-reviews-dataset) from Kaggle, compiled by the user LUTHFI MAHENDRA. Since the original dataset contains ~400000 rows, and that is too many for my poor PC to handle, I decided to only use the subset of it. I randomly selected 20000 reviews from the original dataset, which I provide in the data file. This dataset contains the following columns:
+I use the [Steam Reviews Dataset](https://www.kaggle.com/datasets/luthfim/steam-reviews-dataset) from Kaggle, compiled by the user Luthfi Mahendra. Since the original dataset contains ~400000 rows, and that is too many for my poor PC to handle, I decided to only use the subset of it. I randomly selected 20000 reviews from the original dataset, which I provide in the data file. This dataset contains the following columns:
 
 - `date_posted`: The date a review is posted.
 - `funny`: How many other player think the review is funny.
