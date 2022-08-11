@@ -11,10 +11,10 @@ _Then he starts making a big list of all the things that need adding and priorit
 This workflow was really interesting to me, because it is applicable in many cases, especially in the industry. So here it is, my first attempt on exploring the field of NLP. Enjoy!
 
 # Files
-This repo contains this README, a python notebook called Airline Customer Segmentation.ipynb, a slides in pdf format to highlight the most important aspects of this project called 'Airline Customer Segmentation - slides.pdf', and the dataset flight.csv is in the data directory.
+This repo contains this README, a python notebook named steam_reviews_code.ipynb, slides in pdf format to highlight the most important aspects of this work named 'Steam Reviews - Slides.pdf', and the dataset called steam_reviews.csv used is stored in the data directory.
 
 # Data
-I use the [Steam Reviews Dataset](https://www.kaggle.com/datasets/luthfim/steam-reviews-dataset) from Kaggle, compiled by the user Luthfi Mahendra. Since the original dataset contains ~400000 rows, and that is too many for my poor PC to handle, I decided to only use the subset of it. I randomly selected 20000 reviews from the original dataset, which I provide in the data file. This dataset contains the following columns:
+I use (a subset of) the [Steam Reviews Dataset](https://www.kaggle.com/datasets/luthfim/steam-reviews-dataset) from Kaggle, provided by the user Luthfi Mahendra. Since the original dataset contains ~400000 rows, and that is too many for my poor PC to handle, I decided to only use a subset of it. I randomly selected 20000 reviews from the original dataset, which I provide in the data file. This dataset contains the following columns:
 
 - `date_posted`: The date a review is posted.
 - `funny`: How many other player think the review is funny.
@@ -28,8 +28,8 @@ The important columns are `review` (feature) and `recommendation` (target), but 
 
 # Goals
  The exact goals of this project are:
-- Analyze what words are associated with good reviews (i.e. reviewer recommended the game).
-- Predicting whether a reviewer recommended the game or not based on the review.
+- to predict whether a reviewer recommended the game or not based on the review; and
+- to analyze what words are associated with good reviews (i.e. reviewer recommended the game).
 
 I also want to explore text processing and Bayesian optimization algorithm.
 
@@ -39,7 +39,7 @@ I apply basic text processing to the reviews: removing non-alphabetic characters
 
 This project requires the standard `numpy`, `pandas`, `matplotlib`, `seaborn`, and `sklearn` packages. 
 
-In addition, some non-standard packages include: `hyperopt`, `lightgbm`, and `eli5`.
+In addition, some non-standard packages include: `hyperopt` for the hyperparameter tuning, `lightgbm` to get LGBM Classifier, and `eli5` to highlight the most important words in the model.
 
 # Results
 I find that the tuned TF-IDF+Logistic Regression model gives the best performance based on the results from cross-validation. Using this model to the test data, we get an accuracy 94.2% and a ROC AUC score of 0.916, which is much better than the baseline model's (BOW+Naive Bayes) accuracy of 83.6% and ROC AUC score of 0.784. This means that our model will be able to classify the sentiments of larger, unseen data, which we can use to gain more comprehensive feedback on the current games. The most common problems in the games include: modding (players want it back), cheater/hacker, and game crashing. These are valuable input for game developers and companies if they want to increase the players' gaming experience.
